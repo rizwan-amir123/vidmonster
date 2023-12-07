@@ -8,10 +8,6 @@ import Faq from './components/Faq.js'
 import Footer from './components/Footer.js'
 import LogoImg from '../../public/logo.png'
 import HeroImg from '../../public/hero-1.png'
-import E1Img from '../../public/e1.jpg'
-import E2Img from '../../public/e2.jpg'
-import E3Img from '../../public/e3.jpg'
-import E4Img from '../../public/e4.jpg'
 import HeroSecondImg from '../../public/hero2.png'
 
 export default function Home() {
