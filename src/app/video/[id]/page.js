@@ -1,6 +1,4 @@
 import HeaderSearch from '../../components/HeaderSearch.js'
-import Karousel from '../../components/Karousel.js'
-import CarouselNew from '../../components/CarouselNew.js'
 import CustomPlayer from '../../components/CustomPlayer.js'
 import Footer from '../../components/Footer.js'
 import Recommender from '../../components/Recommender.js'
