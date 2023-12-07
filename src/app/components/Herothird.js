@@ -13,8 +13,8 @@ const Herothird = ({src, src1, src2, src3, src4}) => {
       </div>
 
       <div className="flex h-3/4 m-5 space-x-4">
-        {creators_one.map((creator) => (
-      <div className="overflow-hidden w-1/4 aspect-video bg-red-400 cursor-pointer rounded-xl relative group"
+        {creators_one.map((creator, index) => (
+      <div key={index} className="overflow-hidden w-1/4 aspect-video bg-red-400 cursor-pointer rounded-xl relative group"
         >
             <div
                 className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"
@@ -37,8 +37,8 @@ const Herothird = ({src, src1, src2, src3, src4}) => {
         ))}
         </div>
         <div className="flex h-3/4 m-5 space-x-4">
-{creators_two.map((creator) => (
-      <div className="overflow-hidden w-1/4 aspect-video bg-red-400 cursor-pointer rounded-xl relative group"
+{creators_two.map((creator, index) => (
+      <div key={index} className="overflow-hidden w-1/4 aspect-video bg-red-400 cursor-pointer rounded-xl relative group"
         >
             <div
                 className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end"

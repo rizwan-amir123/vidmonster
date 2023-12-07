@@ -13,7 +13,7 @@ const Recommender = ({text, src}) => {
         
         {creators.map((creator, index) => (
             
-            <div className="container overflow-hidden w-1/3  bg-red-400 cursor-pointer 
+            <div key={index} className="container overflow-hidden w-1/3  bg-red-400 cursor-pointer 
             rounded-xl relative group shadow-lg shadow-[#4f19bb]">
                 <Link href={"/video/" + creator.toLowerCase().replace(" ", "_")}>
                 <div className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 

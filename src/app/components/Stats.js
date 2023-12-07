@@ -3,7 +3,7 @@ const Stats = () => {
     <section className="bg-black px-5 text-white py-20">
     <div align="center" className="w-full place-content-center items-stretch">
       <div className="place-self-center grid-cols-1 place-items-center">
-      <p className="text-2xl py-2 lg:text-6xl justify-center">Stats Don't Lie </p>
+      <p className="text-2xl py-2 lg:text-6xl justify-center">Stats Dont Lie </p>
       <p className="py-5 mt-2 text-xl justify-center">Check out the amazing growth we have been experiencing. </p>
       </div>
     </div>

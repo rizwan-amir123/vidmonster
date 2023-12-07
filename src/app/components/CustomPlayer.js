@@ -169,10 +169,10 @@ const CustomPlayer = ({src, svgsrc, params}) => {
               <div className="bg-[#4f19bb] py-4 rounded-lg">
                 <div className="relative bg-inherit">
                   <input type="text" id="comment" name="comment" onChange={handleComment} 
-                  value= {comment} class="peer bg-transparent h-10 w-full
+                  value= {comment} className="peer bg-transparent h-10 w-full
                   rounded-lg text-white placeholder-transparent ring-2 px-2 ring-white 
                   focus:ring-[#4adb0d] focus:outline-none focus:border-rose-600" placeholder="Comment"/>
-                  <label for="comment" class="absolute cursor-text left-0 -top-3 text-sm text-white 
+                  <label for="comment" className="absolute cursor-text left-0 -top-3 text-sm text-white 
                   bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-white 
                   peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-white 
                   peer-focus:text-sm transition-all">Comment</label>
