@@ -15,9 +15,9 @@ export default function Main() {
       {/*<Player />*/}
       {/*<CarouselNew />*/}
       {/*<Karousel src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>*/}
-      <Recommender text={"Search Results"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>
-      <Recommender text={"Trending"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>
-      <Recommender text={"Creators on the Rise"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>
+      {/*<Recommender text={"Search Results"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>*/}
+      {/*<Recommender text={"Trending"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>*/}
+      {/*<Recommender text={"Creators on the Rise"} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>*/}
       <Footer src={LogoImg}/>
 
     </div>
