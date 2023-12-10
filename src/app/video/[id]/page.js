@@ -26,6 +26,7 @@ export default function Main({params}) {
      
       <Recommender text={"Creators Trending"} src={[E1Img, E2Img, E3Img, E4Img, E5Img]}/>
       <Recommender text={"Creators on the Rise"} src={[E1Img, E2Img, E3Img, E4Img, E5Img]}/>
+
       <Footer src={LogoImg}/>
 
     </div>

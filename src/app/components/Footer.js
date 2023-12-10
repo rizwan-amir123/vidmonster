@@ -1,7 +1,7 @@
 const Footer = ({src}) => {
     return (
 
-<footer className="mt-20 bg-black border-t-2 border-[#4f19bb]">
+<footer className="bg-black border-t-2 border-[#4f19bb]">
     <div className="mx-auto w-full max-w-screen-xl p-4 py-8 lg:py-10">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
