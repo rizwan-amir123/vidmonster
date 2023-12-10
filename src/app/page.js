@@ -8,11 +8,14 @@ import Faq from './components/Faq.js'
 import Footer from './components/Footer.js'
 import LogoImg from '../../public/logo.png'
 import HeroImg from '../../public/hero-1.png'
-import E1Img from '../../public/e1.jpg'
-import E2Img from '../../public/e2.jpg'
-import E3Img from '../../public/e3.jpg'
-import E4Img from '../../public/e4.jpg'
+
 import HeroSecondImg from '../../public/hero2.png'
+
+import E1Img from '../../public/mark.jpg'
+import E2Img from '../../public/dan.webp'
+import E3Img from '../../public/dudeperfect.webp'
+import E4Img from '../../public/smosh.jpg'
+import E5Img from '../../public/preston.png'
 
 export default function Home() {
   return (
@@ -23,7 +26,7 @@ export default function Home() {
       
       <Herosecond src={HeroSecondImg}/>
       <Features />
-      <Herothird src={HeroSecondImg} src1={E1Img} src2={E2Img} src3={E3Img} src4={E4Img}/>
+      <Herothird src={[E1Img, E2Img, E3Img, E4Img, E5Img]}/>
       <Stats />
       <Faq />
       <Footer src={LogoImg}/>

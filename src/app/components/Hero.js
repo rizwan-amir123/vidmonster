@@ -1,6 +1,6 @@
 const Hero = ({src}) => {
   return (
-    <section className="px-5 text-white 
+    <section className="px-10 text-white 
     bg-black py-20"
     
     >

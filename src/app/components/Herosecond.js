@@ -1,6 +1,6 @@
 const Herosecond = ({src}) => {
     return (
-       <section className="min-h-fit bg-[#4f19bb] px-5 text-white 
+       <section className="min-h-fit bg-[#4f19bb] px-10 text-white 
       py-20"
       >
         <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">

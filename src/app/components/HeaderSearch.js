@@ -1,8 +1,7 @@
 export default function HeaderSearch({src}) {
     return (
-    
     <nav className="bg-black border-gray-200 dark:bg-black">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-5 py-1">
         <a href="/" className="flex items-center">
             <img src={src.src} className="h-16" alt="Logo" />
         </a>
