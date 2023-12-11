@@ -49,7 +49,7 @@ const CustomPlayer = ({src, svgsrc, params}) => {
     return(
     <section className="bg-[#4f19bb] px-5 text-white py-5">
     <div className="flex h-96 space-between space-x-4">
-      <div className="container w-2/3 max-w-full">
+      <div className="container w-2/3 max-w-full aspect-w-16">
       <YoutubeEmbed embedId={currentVidId} />
       </div>
       
@@ -70,8 +70,8 @@ const CustomPlayer = ({src, svgsrc, params}) => {
                 alt="" />
                 <h5
                   className="text-left text-sm font-medium text-neutral-800 dark:text-neutral-50">
-                  {vid.title.length > 40 ? vid.title.slice(0, 41) + " ...": vid.title} <br/> <p className="mt-2 text-base text-neutral-600 
-                  dark:text-neutral-200">{vid.channelTitle} </p>
+                  {vid.title.length > 40 ? vid.title.slice(0, 41) + " ...": vid.title} <br/> <p className="mt-2 text-sm text-neutral-600 
+                  dark:text-neutral-200">12K Views </p>
                 </h5>
             </div>
             </button>)
@@ -193,7 +193,7 @@ const CustomPlayer = ({src, svgsrc, params}) => {
             </button>
             </div>
               </div>
-            
+              {comments.map((cmnt, index) => (<p key={index} className="mt-3 p-3 bg-gradient-to-r from-[#4adb0d] to-transparent w-1/3 rounded-lg">{cmnt}</p>))}
             <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Awesome!</p>
             <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Do it again!</p>
             <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Nahhhhh!</p>

@@ -45,12 +45,12 @@ const Player = ({src, svgsrc}) => {
     
     return(
     <section className="bg-[#4f19bb] px-5 text-white py-5">
-    <div className="flex h-96 space-between space-x-4">
-      <div className="container w-2/3 max-w-full">
+    <div className="relative flex h-96 space-between space-x-4">
+      <div className="z-10 w-2/3 max-w-full mt-0.5">
       <YoutubeEmbed embedId={currentVidId} />
       </div>
       
-      <div className="flex-col overflow:scroll overflow-y-auto
+      <div className="z-1 flex-col overflow:scroll overflow-y-auto
       bg-slate-950 h-50 w-1/3 h-max-100 max-w-full 
       border border-gray-200 rounded-lg dark:border-gray-700">
         <p className="p-2 bg-slate-950 font-bold text-[#4adb0d]  shadow-md shadow-[#4adb0d]">MORE FROM THE CREATOR</p>
@@ -131,6 +131,7 @@ const Player = ({src, svgsrc}) => {
             { disliked ? <button onClick={handleDislike}>
                     <a href="#_" className="h-1/2 relative inline-flex bg-[#4f19bb] items-center justify-start px-3 py-1 overflow-hidden font-medium transition-all  rounded hover:bg-white group">
                   Disliked
+                  
             </a>
                     </button> :
                     <button className="border rounded"  onClick={handleDislike}>
@@ -208,10 +209,10 @@ const Player = ({src, svgsrc}) => {
             </button>
             </div>
               </div>
-            
-            <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Awesome!</p>
-            <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Do it again!</p>
-            <p className="mt-3 p-3 bg-indigo-400 w-1/3 rounded-lg">Nahhhhh!</p>
+            {comments.map((cmnt, index) => (<p key={index} className="mt-3 p-3 bg-gradient-to-r from-[#4adb0d] to-transparent w-1/3 rounded-lg">{cmnt}</p>))}
+            <p className="mt-3 p-3 bg-gradient-to-r from-[#4adb0d] to-transparent w-1/3 rounded-lg">Awesome!</p>
+            <p className="mt-3 p-3 bg-gradient-to-r from-[#4adb0d] to-transparent w-1/3 rounded-lg">Do it again!</p>
+            <p className="mt-3 p-3 bg-gradient-to-r from-[#4adb0d] to-transparent w-1/3 rounded-lg">Nahhhhh!</p>
           </div> : null}
           
 

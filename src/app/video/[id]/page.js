@@ -10,6 +10,12 @@ import E3Img from '../../../../public/dudeperfect.webp'
 import E4Img from '../../../../public/smosh.jpg'
 import E5Img from '../../../../public/preston.png'
 
+import E6Img from '../../../../public/nigahiga.jpeg'
+import E7Img from '../../../../public/valkyrae.webp'
+import E8Img from '../../../../public/blippi.webp'
+import E9Img from '../../../../public/felipeneto.jpeg'
+import E10Img from '../../../../public/auronplay.jpg'
+
 import Svg1Img from '../../../../public/down.png'
 import AvatarImg from '../../../../public/avatar.png'
 
@@ -24,9 +30,8 @@ export default function Main({params}) {
 
       
      
-      <Recommender text={"Creators Trending"} src={[E1Img, E2Img, E3Img, E4Img, E5Img]}/>
-      <Recommender text={"Creators on the Rise"} src={[E1Img, E2Img, E3Img, E4Img, E5Img]}/>
-
+      <Recommender text={"Creators Trending"} margin={0} src={[E1Img, E2Img, E3Img, E4Img, E5Img]} names={["Markiplier", "DanTDM", "Dude Perfect", "Smosh", "Preston"]}/>
+      <Recommender text={"Creators on the Rise"} margin={10} src={[E6Img, E7Img, E8Img, E9Img, E10Img]} names={["nigahiga", "Valkyrae", "Blippi", "Felipe Neto", "AuronPlay"]}/>
       <Footer src={LogoImg}/>
 
     </div>

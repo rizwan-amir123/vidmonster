@@ -1,6 +1,6 @@
 import Link from 'next/link';
-const Recommender = ({text, src}) => {
-    const creators = ["Markplier", "DanTDM", "Dude Perfect", "Smosh", "Preston"];
+const Recommender = ({text, margin, src, names}) => {
+    
     const subs = [1.2, 1.87, 1.9, 2.4, 3.2];
     return (
     <section className="min-h-fit bg-black px-7 text-white pt-10 pb-5">
@@ -11,7 +11,7 @@ const Recommender = ({text, src}) => {
         </div>
         <div className="space-x-4 flex">
         
-        {creators.map((creator, index) => (
+        {names.map((creator, index) => (
             
             <div key={index} className="container overflow-hidden w-1/3  bg-red-400 cursor-pointer 
             rounded-xl relative group shadow-lg shadow-[#4f19bb]">
@@ -41,7 +41,9 @@ const Recommender = ({text, src}) => {
             </div>
             
         ))}
+        
         </div>
+        {margin? (<div className="h-20"></div>) : null}
     </section>);
 };
 

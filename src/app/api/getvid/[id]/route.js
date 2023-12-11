@@ -1,7 +1,7 @@
 export async function GET(req, { params }) {
     const id = params.id;
     let CHANNEL_ID = 'UCX6OQ3DkcsbYNE6H8uQQuVA'; 
-    if (id ===  "markplier") {
+    if (id ===  "markiplier") {
         CHANNEL_ID = 'UC7_YxT-KID8kRbqZo7MyscQ';
     }
     if (id === "dantdm") {
@@ -16,6 +16,25 @@ export async function GET(req, { params }) {
     if (id === "preston") {
       CHANNEL_ID = 'UC70Dib4MvFfT1tU6MqeyHpQ';
     }
+    if (id ===  "mrbeast") {
+      CHANNEL_ID = 'UCX6OQ3DkcsbYNE6H8uQQuVA';
+    }
+    if (id ===  "nigahiga") {
+      CHANNEL_ID = 'UCSAUGyc_xA8uYzaIVG6MESQ';
+    }
+    if (id ===  "valkyrae") {
+      CHANNEL_ID = 'UCWxlUwW9BgGISaakjGM37aw';
+    }
+    if (id ===  "blippi") {
+      CHANNEL_ID = 'UC5PYHgAzJ1wLEidB58SK6Xw';
+    }
+    if (id ===  "felipe_neto") {
+      CHANNEL_ID = 'UCV306eHqgo0LvBf3Mh36AHg';
+    }
+    if (id ===  "auronplay") {
+      CHANNEL_ID = 'UCyQqzYXQBUWgBTn4pw_fFSQ';
+    }
+
     try {
     const API_KEY = 'AIzaSyBk3XdgbEoOVaJtsGkUK4vdO3eoKNOYCUk';
     
