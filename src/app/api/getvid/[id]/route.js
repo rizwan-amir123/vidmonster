@@ -36,11 +36,11 @@ export async function GET(req, { params }) {
     }
 
     try {
-    const API_KEY = 'AIzaSyBk3XdgbEoOVaJtsGkUK4vdO3eoKNOYCUk';
+    const api_key = process.env.API_KEY;
     
     
     // Construct the API request URL
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=50&key=${API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=50&key=${api_key}`;
     
     // Make the API request using the fetch function
     const response = await fetch(url);
