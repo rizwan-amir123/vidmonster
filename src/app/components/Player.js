@@ -31,7 +31,7 @@ const Player = ({src, svgsrc}) => {
   
     useEffect(() => {
         const getVids = async () => {
-        await fetch(`http://localhost:3000/api/getvid/1`)
+        await fetch(`/api/getvid/1`)
         .then((response) => response.json())
         .then((data) => {
           setVidData(data.videos);

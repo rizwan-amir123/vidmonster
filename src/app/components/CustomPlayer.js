@@ -34,7 +34,7 @@ const CustomPlayer = ({src, svgsrc, params}) => {
           if (params.id === "") {
             params.id = "1";
           }
-        await fetch(`http://localhost:3000/api/getvid/${params.id}`)
+        await fetch(`/api/getvid/${params.id}`)
         .then((response) => response.json())
         .then((data) => {
           setVidData(data.videos);
