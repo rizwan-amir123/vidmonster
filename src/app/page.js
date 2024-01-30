@@ -6,7 +6,7 @@ import Herosecond from './components/Herosecond.js'
 import Herothird from './components/Herothird.js'
 import Faq from './components/Faq.js'
 import Footer from './components/Footer.js'
-import LogoImg from '../../public/logo.png'
+import LogoImg from '../../public/logo.webp'
 import HeroImg from '../../public/hero-1.png'
 
 import HeroSecondImg from '../../public/hero2.png'
